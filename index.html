@@ -5,61 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radio Chlew</title>
     <style>
+        /* Style dla odtwarzacza audio */
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        #player {
-            display: none;
-        }
-        #playButton {
-            padding: 10px 20px;
-            font-size: 20px;
-            cursor: pointer;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
+            text-align: center;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Przycisk do rozpoczęcia odtwarzania -->
-    <button id="playButton">Start Radio</button>
-
+    <h1>Witaj w Radyjku!</h1>
+    
     <!-- Odtwarzacz audio -->
     <audio id="player" controls>
-        <source src="https://github.com/Heax2137/Radyjko/raw/refs/heads/main/Radio%20Chlew%20-%20Alie%20Olie.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
+        <source src="https://github.com/Heax2137/Radyjko/raw/main/Radio%20Chlew%20-%20Alie%20Olie.mp3" type="audio/mp3">
+        Twoja przeglądarka nie wspiera elementu audio.
     </audio>
 
     <script>
-        // Pobieramy elementy z DOM
-        const player = document.getElementById("player");
-        const playButton = document.getElementById("playButton");
-
-        // Funkcja do rozpoczęcia odtwarzania
-        playButton.addEventListener("click", () => {
-            // Ukrywamy przycisk po kliknięciu
-            playButton.style.display = "none";
-            // Pokazujemy odtwarzacz audio
-            player.style.display = "block";
-            // Rozpoczynamy odtwarzanie piosenki
-            player.play();
-        });
-
-        // Automatyczne przejście do kolejnej piosenki po zakończeniu obecnej
-        player.addEventListener("ended", () => {
-            // Tutaj możesz dodać kod do odtwarzania losowej piosenki (w zależności od Twojej konfiguracji)
-            console.log("Piosenka zakończona.");
-        });
+        // Możesz dodać więcej funkcji JavaScript, jeśli chcesz (np. kontrola odtwarzacza)
     </script>
-
 </body>
 </html>
