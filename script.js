@@ -1,19 +1,22 @@
-const songs = [
-    "https://github.com/Heax2137/Radyjko/raw/refs/heads/main/Radio%20Chlew%20-%20Alie%20Olie%20(7).mp3",
-    "https://github.com/Heax2137/Radyjko/blob/0f90105b13e8800aeafd5f40f16377121706027d/Radio%20Chlew%20-%20Alie%20Olie.mp3",
-    "https://github.com/Heax2137/Radyjko/blob/0f90105b13e8800aeafd5f40f16377121706027d/Radio%20Chlew%20-%20Alie%20Olie.mp3"
-];
+document.addEventListener('DOMContentLoaded', function () {
+    // Tablica z linkami do piosenek
+    const songs = [
+        "https://github.com/Heax2137/Radyjko/raw/main/piosenka1.mp3",
+        "https://github.com/Heax2137/Radyjko/raw/main/piosenka2.mp3",
+        "https://github.com/Heax2137/Radyjko/raw/main/piosenka3.mp3"
+    ];
 
-const player = document.getElementById("player");
+    // Pobierz element audio
+    const audioPlayer = document.getElementById('player');
 
-function nextSong() {
-    const randomIndex = Math.floor(Math.random() * songs.length);
-    player.src = songs[randomIndex];
-    player.play();
-}
+    // Funkcja zmieniająca piosenki po zakończeniu aktualnej
+    function changeSong() {
+        // Losuj nową piosenkę
+        const randomSong = songs[Math.floor(Math.random() * songs.length)];
+        audioPlayer.src = randomSong;
+        audioPlayer.play(); // Uruchom nową piosenkę
+    }
 
-// Automatyczna zmiana po zakończeniu utworu
-player.addEventListener("ended", nextSong);
-
-// Wczytaj pierwszą piosenkę
-nextSong();
+    // Zdarzenie, które uruchomi zmianę piosenki po zakończeniu obecnej
+    audioPlayer.addEventListener('ended', changeSong);
+});
