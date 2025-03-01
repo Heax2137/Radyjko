@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Tablica z linkami do piosenek
     const songs = [
-        "https://github.com/Heax2137/Radyjko/raw/refs/heads/main/piosenka1.mp3",
-        "https://github.com/Heax2137/Radyjko/raw/refs/heads/main/piosenka2.mp3",
-        "https://github.com/Heax2137/Radyjko/raw/refs/heads/main/piosenka3.mp3"
+        "https://raw.githubusercontent.com/Heax2137/Radyjko/main/piosenka1.mp3",
+        "https://raw.githubusercontent.com/Heax2137/Radyjko/main/piosenka2.mp3",
+        "https://raw.githubusercontent.com/Heax2137/Radyjko/main/piosenka3.mp3"
     ];
 
     // Pobierz element audio
