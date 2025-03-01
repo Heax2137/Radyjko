@@ -1,22 +1,19 @@
+/* Style podstawowe */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #121212;
-    color: white;
-    padding: 20px;
+    margin-top: 50px;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-button {
+h1 {
+    color: #4CAF50;
+}
+
+/* Dostosowanie odtwarzacza audio */
+audio {
+    width: 80%;
     margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #ff4081;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #e91e63;
+    border-radius: 10px;
 }
