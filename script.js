@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Tablica z linkami do piosenek
     const songs = [
-        "https://www.dropbox.com/scl/fi/53zyadmncwicuvjj6xegh/piosenka1.mp3?rlkey=2bhkd46t8tzvb57xkjm8ostwr&st=fjpmbz9i&raw=1",
+        "",
         "https://www.dropbox.com/scl/fi/w5rwwvop1nucodd7tr9tw/piosenka2.mp3?rlkey=wabypyg1dc3nvuogtuvz2z948&st=5pmahm9s&raw=1",
         "https://www.dropbox.com/scl/fi/wem6fev8hkupvswtam328/piosenka3.mp3?rlkey=wr0z0rj8opt93bkizfzhwotoc&st=y86q29gm&raw=1"
     ];
